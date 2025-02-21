@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <style>
+        p {
+            font-size: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width:30%;
+            margin: 10% 10% 30% 10%;
+            font-size: 30px;
+        
+            
+        }
+        body{
+            width: 100%;
+        }
+        input[type="text"]:active{
+            color: blue;
+            font-size: 40px;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            position:relative;
+            background-color: blue;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-delay: -2s;
+            /* border-radius: 360%; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        #div1{
+            animation-timing-function: linear;
+        }
+        #div2{
+            animation-timing-function: ease;
+        }
+        #div6{
+            animation-timing-function: ease-in;
+        }
+        #div3{
+            animation-timing-function: ease-out;
+        }
+        #div4{
+            animation-timing-function: ease-in-out;
+        }
+        #div5{
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        @keyframes example {
+            0% {background-color: yellow;left: 0px;top: 0px;}
+            20% {background-color: silver;left: 200px;top: 0px;}
+            30% {background-color: snow;left: 200px;top: 200px;}
+            40% {background-color: blanchedalmond;left: 0px;top: 200px;}
+            50% {background-color: gold;left: 0px;top: 0px;}
+            60% {background-color: brown;left: 200px;top: 0px;}
+            70% {background-color: tomato;left: 200px;top: 0px;}
+            80% {background-color: gray;left: 200px;top: 200px;}
+            90% {background-color: crimson;left: 0px;top: 200px;}
+            100% {background-color: khaki;left: 0px;left: 0px;}
+        }
+    </style>
+    <body style=" background-color: rgb(197, 147, 197);">
+        <menu>
+        <nav>
+            <a href="home.html">Return Home</a>
+        </nav>
+        <p style="color: rgb(2, 59, 2);">
+            it is good to be born again
+            why i said this is because you cannot enter the kingdom of GOD
+            <br>what is your Name;
+            <br>
+            <Marquee>
+                AHIABUIKE  SALEM  CHINEDU.
+            </Marquee>
+            </p>
+        </menu>
+        <div></div>
+            <form method="get">
+                <input type="text" required placeholder="First Name" maxlength="25" style="border-radius: 20%;padding: 5% 5% 5% 5%;margin: 10% 10% 10% 10%; font-size: 20px;">
+                <input type="number" required placeholder="Phone number" maxlength="11" style="border-radius: 20%;padding: 5% 5% 5% 5%;margin: 10% 10% 10% 10%;font-size: 20px;">
+                <input type="email" required placeholder="email" style="border-radius: 20%;padding: 5% 5% 5% 5%;margin: 10% 10% 10% 10%;font-size: 20px;">
+                <label>Buy-fascinator</label>
+                <input type="checkbox" required placeholder="fascinator" style="border-radius: 20%;padding: 5% 5% 5% 5%;margin: 10% 10% 10% 10%;font-size: 20px;">
+                <label> Learn-fascinator</label>
+                <input type="checkbox" required placeholder=" Learn-fascinator"style="border-radius: 20%;padding: 5% 5% 5% 5%;margin: 10% 10% 10% 10%;font-size: 20px;">
+                <!-- <input type="radio" value="ss">cdce -->
+                <!-- <input type="radio">cdce -->
+                 <input type="time">
+                 <input type="submit" value="save" style="margin-bottom: 10px;border-radius: 50px;height: 40px;font-size: 20px;">
+                 <input type="reset" value="Erase" style="margin-bottom: 10px;border-radius: 50px;height: 40px;font-size: 20px;">
+            </form>
+        <div id="div1">Excel.</div>
+        <div id="div2">Divine.</div>
+        <div id="div6">Bethel</div>
+        <div id="div3">CHINEDU</div>
+        <div id="div4">Florence</div>
+        <div id="div5">Forster</div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="info">
+        <link rel="icon" href="TFR.JPG">
+        <title>Facebook lite</title>
+        <link rel="icon" href="images/457456431_431968823224552_1919194467165005668_n.jpg">
+        <link rel="stylesheet" href="text.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet"> -->
+    </head>
+    <body> 
+        <div id="digitalClock">f</div>
+       <div class="container">
+        <h2>Register with us</h2>
+        <form id="form">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <small>Error Messaage</small>
+            </div>
+            <div class="form-control">
+                <label for="Phone">Phone</label>
+                <input type="number" id="phone">
+                <small>Error Messaage</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <small>Error Messaage</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+       </div>
+       
+       
+       <script>
+         let changeColour=document.getElementById("form1");
+            function changeColor() {
+                changeColour.setAttribute('id','form');
+            }
+            setInterval(clock,1000);
+            function clock() {
+                const x = document.getElementById("digitalClock")
+                const y = new Date();
+                x.innerHTML = y.getFullYear() + " :" + y.getDay() + "1" + " Date :" + " Hours :" + y.getHours() + " :" + " minutes :" + y.getMinutes() + " :" + " seconds :"+ y.getSeconds();
+                x.style.color = "green";
+                x.style.backgroundColor = "whitesmoke";
+            }
+        </script>
+    </body>
+    <footer>
+        <strong>
+            CODING GURU&copy2024
+        </strong>
+    </footer>
+</html>
